@@ -1,0 +1,66 @@
+@keyframes colorChange {
+    0% { color: #ff0000; }
+    50% { color: #0000ff; }
+    100% { color: #ffff00; }
+}
+
+@keyframes progress {
+    0% {width: 0}
+    100%{width: 100%}
+}
+
+.px-3{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.container{
+    composes: px-3;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.col{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.helloWorld{
+    animation: colorChange 1s infinite;
+}
+
+.bar{
+    margin-top: 10px;
+    height: 5px;
+    background-color: red;
+    width: 0;
+}
+
+.animateProgress{
+    animation-name: progress;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+
+
